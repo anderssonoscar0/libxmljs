@@ -23,6 +23,7 @@ jobs:
                     - { node-version: 16, npm-version: 8 }
                     - { node-version: 17, npm-version: 8 }
                     - { node-version: 18, npm-version: 8 }
+                    - { node-version: 20, npm-version: 10 }
                 os: [macos-latest, windows-2019]
         runs-on: ${{ matrix.os }}
         steps:
@@ -100,6 +101,7 @@ jobs:
                     - { node-version: 16 }
                     - { node-version: 17 }
                     - { node-version: 18 }
+                    - { node-version: 20 }
                 container-image: [x86_64]
         container:
             image: quay.io/pypa/manylinux_2_28_${{ matrix.container-image }}
@@ -145,6 +147,7 @@ jobs:
                     - { node-version: 16, npm-version: 8 }
                     - { node-version: 17, npm-version: 8 }
                     - { node-version: 18, npm-version: 8 }
+                    - { node-version: 20, npm-version: 10 }
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@master
