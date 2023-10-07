@@ -1,7 +1,7 @@
 "use strict";
 
 import { HTMLDocument, XMLDocument } from "./document";
-import { XMLElement, XMLText, XMLNamespace, XMLNodeError, XMLNode } from "./node";
+import { XMLElement, XMLText, XMLNamespace } from "./node";
 import { parseHtml, parseHtmlAsync, parseXml, parseXmlAsync } from "./parse";
 import { SaxParser, SaxPushParser } from "./sax";
 import { HTMLParseOptions, XMLParseOptions } from "./types";
@@ -59,7 +59,7 @@ function Comment(document: XMLDocument, content?: string): XMLText {
         throw new Error("document argument must be an instance of Document");
     }
 
-    return document.createComment(content)
+    return document.createComment(content);
 }
 
 function ProcessingInstruction(document: XMLDocument, name: string, content?: string): XMLText {
@@ -94,5 +94,5 @@ export {
     parseHtml,
     parseHtmlAsync,
     SaxParser,
-    SaxPushParser
+    SaxPushParser,
 };

@@ -1,4 +1,4 @@
-import { xmlDocPtr, xmlNodePtr, xmlDtdPtr, xmlNsPtr, XMLReferenceType, xmlXPathObjectPtr } from "./bindings/types";
+import { xmlDocPtr, xmlNodePtr, xmlDtdPtr, xmlNsPtr, xmlXPathObjectPtr } from "./bindings/types";
 
 import { XMLReference, createXMLReference, createXMLReferenceOrThrow } from "./bindings";
 
@@ -28,13 +28,11 @@ import {
     xmlGetLineNo,
     xmlDocSetRootElement,
     xmlSaveTree,
-    xmlReconciliateNs,
-    xmlSetTreeDoc,
     xmlXPathFreeObject,
     xmlXPathFreeContext,
 } from "./bindings/functions";
 
-import { xmlSaveCtxtPtr }from "./bindings/types"
+import { xmlSaveCtxtPtr } from "./bindings/types";
 
 import bindings from "./bindings";
 
@@ -97,7 +95,7 @@ function refToNodeType(node: xmlNodePtr | xmlDocPtr | null): XMLNode | XMLAttrib
 export class XMLNode extends XMLReference<xmlNodePtr> {
     /**
      * @private
-     * @param _ref 
+     * @param _ref
      */
     constructor(_ref: any) {
         super(_ref);
@@ -266,7 +264,7 @@ export class XMLNode extends XMLReference<xmlNodePtr> {
 
     /**
      * @private
-     * @param _docRef 
+     * @param _docRef
      */
     public setDocumentRoot(_docRef: xmlDocPtr) {
         xmlDocSetRootElement(_docRef, this.getNativeReference());
@@ -416,7 +414,7 @@ export class XMLNode extends XMLReference<xmlNodePtr> {
      * @returns {XMLElement[]} array of child nodes
      */
     public childNodes() {
-        const _ref = this.getNativeReference()
+        const _ref = this.getNativeReference();
         const children: XMLElement[] = [];
 
         let child = _ref.children;
@@ -477,7 +475,7 @@ export class XMLNode extends XMLReference<xmlNodePtr> {
 
         result.nodesetval.forEach((node) => {
             const instance = refToNodeType(node);
-            
+
             if (instance !== null && !(instance instanceof XMLDocument)) {
                 nodeSet.push(instance);
             }
@@ -511,7 +509,7 @@ export class XMLNode extends XMLReference<xmlNodePtr> {
 
             if (_ref) {
                 const node = refToNodeType(_ref);
-                
+
                 if (node !== null && !(node instanceof XMLDocument)) {
                     ret = node;
                 }
@@ -629,7 +627,7 @@ export class XMLNode extends XMLReference<xmlNodePtr> {
 
     /**
      * @private
-     * @param context 
+     * @param context
      */
     public _xmlSaveTree(context: xmlSaveCtxtPtr) {
         xmlSaveTree(context, this.getNativeReference());
@@ -660,8 +658,8 @@ export class XMLElement extends XMLNode {
     /**
      * set multiple attributes
      * BREAKING CHANGE: no longer overloaded for setting single attr
-     * @param attributes 
-     * @returns 
+     * @param attributes
+     * @returns
      */
     public attr(attributes: XMLAttributeMap): XMLElement {
         if (typeof attributes === "string") {
@@ -731,7 +729,7 @@ export class XMLElement extends XMLNode {
 
         let element: XMLNode | null = null;
 
-        const doc =  this.doc();
+        const doc = this.doc();
 
         if (doc && typeof value === "string") {
             element = doc.createText(value, false);
@@ -750,7 +748,7 @@ export class XMLElement extends XMLNode {
 export class XMLNamespace extends XMLReference<xmlNsPtr> {
     /**
      * @private
-     * @param _ref 
+     * @param _ref
      */
     constructor(_ref: any) {
         super(_ref);
@@ -780,7 +778,7 @@ export class XMLNamespace extends XMLReference<xmlNsPtr> {
 export class XMLAttribute extends XMLNode {
     /**
      * @private
-     * @param _ref 
+     * @param _ref
      */
     constructor(_ref: any) {
         super(_ref);
@@ -835,7 +833,7 @@ export class XMLDTD extends XMLReference<xmlDtdPtr> {
 
     /**
      * @private
-     * @param _ref 
+     * @param _ref
      */
     constructor(_ref: any) {
         super(_ref);
@@ -865,7 +863,7 @@ export class XMLDTD extends XMLReference<xmlDtdPtr> {
 export class XMLText extends XMLElement {
     /**
      * @private
-     * @param _ref 
+     * @param _ref
      */
     constructor(_ref: any) {
         super(_ref);

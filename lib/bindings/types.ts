@@ -7,7 +7,6 @@
     
     
     type attributeDeclSAXFunc = {}
-    type attributeSAXFunc = {}
     type cdataBlockSAXFunc = {}
     type charactersSAXFunc = {}
     type commentSAXFunc = {}
@@ -54,13 +53,8 @@ getCPtr: {
                 (): number,
             }}
     export type htmlNodePtr = {}
-    type htmlParserCtxt = {}
     export type htmlParserCtxtPtr = {}
-    type htmlParserInput = {}
     export type htmlParserInputPtr = {}
-    type htmlParserNodeInfo = {}
-    type htmlParserOption = {}
-    type htmlSAXHandler = {}
     export type htmlSAXHandlerPtr = {}
     type htmlStatus = {}
     type ignorableWhitespaceSAXFunc = {}
@@ -76,11 +70,8 @@ getCPtr: {
     type startElementSAXFunc = {}
     type unparsedEntityDeclSAXFunc = {}
     type warningSAXFunc = {}
-    type xlinkActuate = {}
     type xlinkExtendedLinkFunk = {}
     type xlinkExtendedLinkSetFunk = {}
-    type xlinkHRef = {}
-    type xlinkHandler = {}
     export type xlinkHandlerPtr = {
                 simple: xlinkSimpleLinkFunk,   // xlinkSimpleLinkFunk
                 extended: xlinkExtendedLinkFunk,   // xlinkExtendedLinkFunk
@@ -90,12 +81,8 @@ getCPtr: {
                 (): number,
             }}
     type xlinkNodeDetectFunc = {}
-    type xlinkRole = {}
-    type xlinkShow = {}
     type xlinkSimpleLinkFunk = {}
-    type xlinkTitle = {}
     type xlinkType = {}
-    type xmlAttr = {}
     export type xmlAttrPtr = {
                 _private: any,   // void
                 type: xmlElementType,   // xmlElementType
@@ -113,7 +100,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlAttribute = {}
     type xmlAttributeDefault = {}
     export type xmlAttributePtr = {
                 _private: any,   // void
@@ -136,16 +122,11 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlAttributeTable = {}
     export type xmlAttributeTablePtr = {}
     type xmlAttributeType = {}
-    type xmlAutomata = {}
     export type xmlAutomataPtr = {}
-    type xmlAutomataState = {}
     export type xmlAutomataStatePtr = {}
-    type xmlBuf = {}
     export type xmlBufPtr = {}
-    type xmlBuffer = {}
     type xmlBufferAllocationScheme = {}
     export type xmlBufferPtr = {
                 content: string,   // xmlChar
@@ -157,7 +138,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlCatalog = {}
     type xmlCatalogAllow = {}
     type xmlCatalogPrefer = {}
     export type xmlCatalogPtr = {}
@@ -187,7 +167,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlChar = {}
     type xmlCharEncoding = {}
     type xmlCharEncodingHandler = {}
     export type xmlCharEncodingHandlerPtr = {
@@ -201,7 +180,6 @@ getCPtr: {
     type xmlCharEncodingInputFunc = {}
     type xmlCharEncodingOutputFunc = {}
     type xmlDOMWrapAcquireNsFunction = {}
-    type xmlDOMWrapCtxt = {}
     export type xmlDOMWrapCtxtPtr = {
                 _private: any,   // void
                 type: number,   // int
@@ -214,8 +192,6 @@ getCPtr: {
     type xmlDeregisterNodeFunc = {}
     type xmlDict = {}
     export type xmlDictPtr = {}
-    type xmlDoc = {}
-    type xmlDocProperties = {}
     export type xmlDocPtr = {
                 _private: any,   // void
                 type: xmlElementType,   // xmlElementType
@@ -245,7 +221,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlDtd = {}
     export type xmlDtdPtr = {
                 _private: any,   // void
                 type: xmlElementType,   // xmlElementType
@@ -267,7 +242,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlElement = {}
     type xmlElementContent = {}
     type xmlElementContentOccur = {}
     export type xmlElementContentPtr = {
@@ -302,13 +276,10 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlElementTable = {}
     export type xmlElementTablePtr = {}
     type xmlElementType = {}
     type xmlElementTypeVal = {}
-    type xmlEntitiesTable = {}
     export type xmlEntitiesTablePtr = {}
-    type xmlEntity = {}
     export type xmlEntityPtr = {
                 _private: any,   // void
                 type: xmlElementType,   // xmlElementType
@@ -335,7 +306,6 @@ getCPtr: {
             }}
     type xmlEntityReferenceFunc = {}
     type xmlEntityType = {}
-    type xmlEnumeration = {}
     export type xmlEnumerationPtr = {
                 next: xmlEnumerationPtr,   // _xmlEnumeration
                 name: string,   // q(const).xmlChar
@@ -344,7 +314,6 @@ getCPtr: {
                 (): number,
             }}
     type xmlError = {}
-    type xmlErrorDomain = {}
     type xmlErrorLevel = {}
     export type xmlErrorPtr = {
                 domain: number,   // int
@@ -364,16 +333,12 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlExpCtxt = {}
     export type xmlExpCtxtPtr = {}
-    type xmlExpNode = {}
     export type xmlExpNodePtr = {}
-    type xmlExpNodeType = {}
     type xmlExternalEntityLoader = {}
     type xmlFeature = {}
     type xmlFreeFunc = {}
     type xmlGenericErrorFunc = {}
-    type xmlGlobalState = {}
     export type xmlGlobalStatePtr = {
                 xmlParserVersion: string,   // q(const).char
                 xmlDefaultSAXLocator: xmlSAXLocator,   // xmlSAXLocator
@@ -416,9 +381,7 @@ getCPtr: {
     type xmlHashDeallocator = {}
     type xmlHashScanner = {}
     type xmlHashScannerFull = {}
-    type xmlHashTable = {}
     export type xmlHashTablePtr = {}
-    type xmlID = {}
     export type xmlIDPtr = {
                 next: xmlIDPtr,   // _xmlID
                 value: string,   // q(const).xmlChar
@@ -430,20 +393,16 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlIDTable = {}
     export type xmlIDTablePtr = {}
     type xmlInputCloseCallback = {}
     type xmlInputMatchCallback = {}
     type xmlInputOpenCallback = {}
     type xmlInputReadCallback = {}
-    type xmlLink = {}
     export type xmlLinkPtr = {}
-    type xmlList = {}
     type xmlListDataCompare = {}
     type xmlListDeallocator = {}
     export type xmlListPtr = {}
     type xmlListWalker = {}
-    type xmlLocationSet = {}
     export type xmlLocationSetPtr = {
                 locNr: number,   // int
                 locMax: number,   // int
@@ -453,12 +412,8 @@ getCPtr: {
                 (): number,
             }}
     type xmlMallocFunc = {}
-    type xmlModule = {}
-    type xmlModuleOption = {}
     export type xmlModulePtr = {}
-    type xmlMutex = {}
     export type xmlMutexPtr = {}
-    type xmlNode = {}
     export type xmlNodePtr = {
                 _private: any,   // void
                 type: xmlElementType,   // xmlElementType
@@ -480,7 +435,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlNodeSet = {}
     export type xmlNodeSetPtr = {
                 nodeNr: number,   // int
                 nodeMax: number,   // int
@@ -489,7 +443,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlNotation = {}
     export type xmlNotationPtr = {
                 name: string,   // q(const).xmlChar
                 PublicID: string,   // q(const).xmlChar
@@ -498,9 +451,7 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlNotationTable = {}
     export type xmlNotationTablePtr = {}
-    type xmlNs = {}
     export type xmlNsPtr = {
                 next: xmlNsPtr | null,   // struct _xmlNs
                 type: xmlNsPtr | null,   // xmlNsType
@@ -512,8 +463,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlNsType = {}
-    type xmlOutputBuffer = {}
     type xmlOutputBufferCreateFilenameFunc = {}
     export type xmlOutputBufferPtr = {
                 context: any,   // void
@@ -532,7 +481,6 @@ getCPtr: {
     type xmlOutputMatchCallback = {}
     type xmlOutputOpenCallback = {}
     type xmlOutputWriteCallback = {}
-    type xmlParserCtxt = {}
     export type xmlParserCtxtPtr = {
                 sax: xmlSAXHandlerPtr,   // _xmlSAXHandler
                 userData: any,   // void
@@ -628,8 +576,6 @@ getCPtr: {
                 (): number,
             }}
     type xmlParserErrors = {}
-    type xmlParserInput = {}
-    type xmlParserInputBuffer = {}
     type xmlParserInputBufferCreateFilenameFunc = {}
     export type xmlParserInputBufferPtr = {
                 context: any,   // void
@@ -688,15 +634,9 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlParserOption = {}
-    type xmlParserSeverities = {}
-    type xmlPattern = {}
-    type xmlPatternFlags = {}
     export type xmlPatternPtr = {}
-    type xmlRMutex = {}
     export type xmlRMutexPtr = {}
     type xmlReallocFunc = {}
-    type xmlRef = {}
     export type xmlRefPtr = {
                 next: xmlRefPtr,   // _xmlRef
                 value: string,   // q(const).xmlChar
@@ -707,22 +647,14 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlRefTable = {}
     export type xmlRefTablePtr = {}
     type xmlRegExecCallbacks = {}
-    type xmlRegExecCtxt = {}
     export type xmlRegExecCtxtPtr = {}
-    type xmlRegexp = {}
     export type xmlRegexpPtr = {}
     type xmlRegisterNodeFunc = {}
-    type xmlRelaxNG = {}
-    type xmlRelaxNGParserCtxt = {}
     export type xmlRelaxNGParserCtxtPtr = {}
-    type xmlRelaxNGParserFlag = {}
     export type xmlRelaxNGPtr = {}
-    type xmlRelaxNGValidCtxt = {}
     export type xmlRelaxNGValidCtxtPtr = {}
-    type xmlRelaxNGValidErr = {}
     type xmlRelaxNGValidityErrorFunc = {}
     type xmlRelaxNGValidityWarningFunc = {}
     type xmlSAXHandler = {}
@@ -807,11 +739,7 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlSaveCtxt = {}
     export type xmlSaveCtxtPtr = {}
-    type xmlSaveOption = {}
-    type xmlSchema = {}
-    type xmlSchemaAnnot = {}
     export type xmlSchemaAnnotPtr = {
                 next: xmlSchemaAnnotPtr,   // _xmlSchemaAnnot
                 content: xmlNodePtr | null,   // xmlNodePtr
@@ -819,8 +747,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlSchemaAttribute = {}
-    type xmlSchemaAttributeGroup = {}
     export type xmlSchemaAttributeGroupPtr = {
                 type: xmlSchemaTypeType,   // xmlSchemaTypeType
                 next: xmlSchemaAttributePtr,   // _xmlSchemaAttribute
@@ -841,7 +767,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlSchemaAttributeLink = {}
     export type xmlSchemaAttributeLinkPtr = {
                 next: xmlSchemaAttributeLinkPtr,   // _xmlSchemaAttributeLink
                 attr: xmlSchemaAttributePtr,   // _xmlSchemaAttribute
@@ -874,7 +799,6 @@ getCPtr: {
                 (): number,
             }}
     type xmlSchemaContentType = {}
-    type xmlSchemaElement = {}
     export type xmlSchemaElementPtr = {
                 type: xmlSchemaTypeType,   // xmlSchemaTypeType
                 next: xmlSchemaTypePtr,   // _xmlSchemaType
@@ -906,8 +830,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlSchemaFacet = {}
-    type xmlSchemaFacetLink = {}
     export type xmlSchemaFacetLinkPtr = {
                 next: xmlSchemaFacetLinkPtr,   // _xmlSchemaFacetLink
                 facet: xmlSchemaFacetPtr,   // xmlSchemaFacetPtr
@@ -930,7 +852,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlSchemaNotation = {}
     export type xmlSchemaNotationPtr = {
                 type: xmlSchemaTypeType,   // xmlSchemaTypeType
                 name: string,   // q(const).xmlChar
@@ -941,7 +862,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlSchemaParserCtxt = {}
     export type xmlSchemaParserCtxtPtr = {}
     export type xmlSchemaPtr = {
                 name: string,   // q(const).xmlChar
@@ -970,9 +890,6 @@ getCPtr: {
                 (): number,
             }}
     export type xmlSchemaSAXPlugPtr = {}
-    type xmlSchemaSAXPlugStruct = {}
-    type xmlSchemaType = {}
-    type xmlSchemaTypeLink = {}
     export type xmlSchemaTypeLinkPtr = {
                 next: xmlSchemaTypeLinkPtr,   // _xmlSchemaTypeLink
                 type: xmlSchemaTypePtr,   // xmlSchemaTypePtr
@@ -1016,19 +933,13 @@ getCPtr: {
                 (): number,
             }}
     type xmlSchemaTypeType = {}
-    type xmlSchemaVal = {}
     export type xmlSchemaValPtr = {}
     type xmlSchemaValType = {}
-    type xmlSchemaValidCtxt = {}
     export type xmlSchemaValidCtxtPtr = {}
-    type xmlSchemaValidError = {}
-    type xmlSchemaValidOption = {}
     type xmlSchemaValidityErrorFunc = {}
     type xmlSchemaValidityLocatorFunc = {}
     type xmlSchemaValidityWarningFunc = {}
     type xmlSchemaWhitespaceValueType = {}
-    type xmlSchemaWildcard = {}
-    type xmlSchemaWildcardNs = {}
     export type xmlSchemaWildcardNsPtr = {
                 next: xmlSchemaWildcardNsPtr | null,   // _xmlSchemaWildcardNs
                 value: string,   // q(const).xmlChar
@@ -1054,10 +965,8 @@ getCPtr: {
             }}
     type xmlStartTag = {}
     type xmlStrdupFunc = {}
-    type xmlStreamCtxt = {}
     export type xmlStreamCtxtPtr = {}
     type xmlStructuredErrorFunc = {}
-    type xmlURI = {}
     export type xmlURIPtr = {
                 scheme: string,   // char
                 opaque: string,   // char
@@ -1100,7 +1009,6 @@ getCPtr: {
     export type xmlValidStatePtr = {}
     type xmlValidityErrorFunc = {}
     type xmlValidityWarningFunc = {}
-    type xmlXPathAxis = {}
     type xmlXPathAxisFunc = {}
     export type xmlXPathAxisPtr = {
                 name: string,   // q(const).xmlChar
@@ -1109,9 +1017,7 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlXPathCompExpr = {}
     export type xmlXPathCompExprPtr = {}
-    type xmlXPathContext = {}
     export type xmlXPathContextPtr = {
                 doc: xmlDocPtr | null,   // xmlDocPtr
                 node: xmlNodePtr | null,   // xmlNodePtr
@@ -1160,13 +1066,9 @@ getCPtr: {
                 (): number,
             }}
     type xmlXPathConvertFunc = {}
-    type xmlXPathError = {}
-    type xmlXPathEvalFunc = {}
     type xmlXPathFuncLookupFunc = {}
     export type xmlXPathFuncPtr = {}
-    type xmlXPathFunct = {}
     type xmlXPathFunction = {}
-    type xmlXPathObject = {}
     export type xmlXPathObjectPtr = {
                 type: xmlXPathObjectType,   // xmlXPathObjectType
                 nodesetval: xmlNodePtr[],   // xmlNodeSetPtr
@@ -1182,7 +1084,6 @@ getCPtr: {
                 (): number,
             }}
     type xmlXPathObjectType = {}
-    type xmlXPathParserContext = {}
     export type xmlXPathParserContextPtr = {
                 cur: string,   // q(const).xmlChar
                 base: string,   // q(const).xmlChar
@@ -1200,7 +1101,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlXPathType = {}
     export type xmlXPathTypePtr = {
                 name: string,   // q(const).xmlChar
                 func: xmlXPathConvertFunc,   // xmlXPathConvertFunc
@@ -1208,7 +1108,6 @@ getCPtr: {
 getCPtr: {
                 (): number,
             }}
-    type xmlXPathVariable = {}
     type xmlXPathVariableLookupFunc = {}
     export type xmlXPathVariablePtr = {
                 name: string,   // q(const).xmlChar
