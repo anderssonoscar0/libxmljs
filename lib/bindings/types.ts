@@ -414,6 +414,7 @@ getCPtr: {
     type xmlMallocFunc = {}
     export type xmlModulePtr = {}
     export type xmlMutexPtr = {}
+    type xmlNode = {}
     export type xmlNodePtr = {
                 _private: any,   // void
                 type: xmlElementType,   // xmlElementType
